@@ -22,6 +22,7 @@ function isPalindrome(SingleLinkedList $list)
     }
 
     $pre = null;
+    // 快慢指针
     $slow = $list->head->next;
     $fast = $list->head->next;
     $remainNode = null;
@@ -60,5 +61,10 @@ $list->insert('c');
 $list->insert('c');
 $list->insert('b');
 $list->insert('a');
+
+$list->printList();
+$list->printListSimple();
+exit;
+print_r($list);die;
 
 var_dump(isPalindrome($list));
